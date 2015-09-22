@@ -1,0 +1,14 @@
+{
+    "name": "lexty/auth-manager",
+    "description": "Authentication manager for PHP 5.4",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Alexandr Medvedev",
+            "email": "alexandr.mdr@gmail.com"
+        }
+    ],
+    "require": {}
+}
