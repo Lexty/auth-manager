@@ -1,6 +1,6 @@
 <?php
 
-namespace Lexty\AuthManager;
+namespace Lexty\AuthManager\Token;
 
 interface TokenInterface extends \Serializable
 {
@@ -16,7 +16,6 @@ interface TokenInterface extends \Serializable
 
     /**
      * @param mixed $user
-     * @return mixed
      */
     public function setUser($user);
 
@@ -44,4 +43,34 @@ interface TokenInterface extends \Serializable
      * @param bool $authenticated The authenticated flag.
      */
     public function setAuthenticated($authenticated);
+
+    /**
+     * @return array
+     */
+    public function getAttributes();
+
+    /**
+     * @param array $attributes
+     */
+    public function setAttributes(array $attributes);
+
+    /**
+     * @param string $key
+     *
+     * @return bool
+     */
+    public function hasAttrbiute($key);
+
+    /**
+     * @param string $key
+     *
+     * @return mixed
+     */
+    public function getAttrbinute($key);
+
+    /**
+     * @param string $key
+     * @param mixed  $value
+     */
+    public function setAttribute($key, $value);
 }

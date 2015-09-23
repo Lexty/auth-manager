@@ -10,5 +10,7 @@
             "email": "alexandr.mdr@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "ircmaxell/password-compat": "dev-master"
+    }
 }
